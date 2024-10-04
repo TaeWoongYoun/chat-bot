@@ -1,0 +1,1 @@
+streamlit run c:\Users\PC\Desktop\chat-bot\chat.py
