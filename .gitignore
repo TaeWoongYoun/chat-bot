@@ -1,1 +1,9 @@
-.streamlit/secrets.toml
+# 환경 변수 파일 보호
+.env
+
+# VS Code 관련 파일 무시
+.vscode/
+
+# Python 가상 환경 무시
+venv/
+__pycache__/
