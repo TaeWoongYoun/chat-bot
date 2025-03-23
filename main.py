@@ -1,9 +1,17 @@
+import os
 from openai import OpenAI
 import streamlit as st
+from dotenv import load_dotenv
+
+# .env 파일 로드
+load_dotenv()
+
+# OpenAI API 키 가져오기
+api_key = os.getenv("OPENAI_API_KEY")
 
 st.title("Chat-Bot")
 
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = OpenAI(api_key=api_key)
 
 # 시스템 메시지 설정
 system_message = '''
